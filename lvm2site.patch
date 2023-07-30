@@ -1,0 +1,14 @@
+diff --git a/package/lvm2/lvm2.mk b/package/lvm2/lvm2.mk
+index a5724328..19815a41 100644
+--- a/package/lvm2/lvm2.mk
++++ b/package/lvm2/lvm2.mk
+@@ -6,7 +6,7 @@
+ 
+ LVM2_VERSION = 2.03.12
+ LVM2_SOURCE = LVM2.$(LVM2_VERSION).tgz
+-LVM2_SITE = http://sources.redhat.com/pub/lvm2
++LVM2_SITE = https://ftp.gwdg.de/pub/linux/sources.redhat.com/lvm2
+ LVM2_INSTALL_STAGING = YES
+ LVM2_LICENSE = GPL-2.0, LGPL-2.1
+ LVM2_LICENSE_FILES = COPYING COPYING.LIB
+

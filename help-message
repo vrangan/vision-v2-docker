@@ -1,0 +1,13 @@
+cat <<!
+This is the docker container to build the vision-v2 repos.
+The container is created with the needed modules to build with quick build
+using the top level Makefile (which downloads the appropriate cross compilation
+tools and does all the work) or step by step using the steps as defined in the Software Technical Reference manual (which requires the riscv cross compiler
+to be installed)
+
+The command line give below is  how to run the docker container
+  Change repodir to location on the host where the repos have to be cloned.
+    Make sure there is atleast 20GB of free storage space available.
+
+docker run --rm -it -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -v <repodir>:/vision-v2-repos -u $(id -u):$(id -g) vision-v2-build
+!
