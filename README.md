@@ -1,4 +1,4 @@
-# Docker container with the necessary tooling
+# Docker container for building the StarFive VisionV2 SBC artifcats
 
 After running into several issues to build with the Ubuntu 22.04 LTS version, I decided to create a 20.04 container to build and it has been helpful.
 
