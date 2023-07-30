@@ -19,7 +19,7 @@ to change the Timezone to New_York, you can build with docker build -t vision-v2
 
 Start the container using the command line given below. Change repodir to a location on the host where the repos have to be cloned. 
 
-> docker run --rm -it  -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -v <repodir>:/vision-v2-repos -u $(id -u):$(id -g) vision-v2-build
+> docker run --rm -it  -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro -v <repodir>:/vision-v2-repos -u \$(id -u):\$(id -g) vision-v2-build
 
 We ro mount  the passwd and group directories on to the container so that the we can use users defined in the host to be used.
 <repodir> - Directory where the repo is cloned and built.  Make sure you have atleast 20GB of free space available in this directory.
